@@ -1,0 +1,19 @@
+<div class="container">
+<nav>
+    <ul>
+        <li>$ socials: </li>
+        {% if site.author.github != nil %}
+        <li><a href="https://github.com/{{ site.author.github }}" 
+            class="fa fa-github-square"></a></li>
+        {% endif %}
+        {% if site.author.twitter != nil %}
+        <li><a href="https://twitter.com/{{ site.author.twitter }}"
+            class="fa fa-twitter"></a></li>
+        {% endif %}
+        {% if site.author.linkedin != nil %}
+        <li><a href="https://linkedin.com/in/{{ site.author.linkedin }}" 
+            class="fa fa-linkedin"></a></li>
+        {% endif %}
+    </ul>
+</nav>
+</div>

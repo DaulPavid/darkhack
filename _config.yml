@@ -1,0 +1,17 @@
+title: Dark Hacking Site 
+author:
+  name: root
+  email: root@sudo.net
+  twitter: daulpavid
+  github: daulpavid
+  linkedin: daulpavid
+description:
+  Bullshit goes here.
+tagline:
+  Hack the planet!
+
+darkhack:
+  date_format:
+    "%x"
+
+theme: darkhack

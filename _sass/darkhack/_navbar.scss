@@ -1,0 +1,22 @@
+@import "_config";
+
+nav {
+    border-left: $border-style $border-thick;
+    border-right: $border-style-content $border-thick;
+    border-color: $border-color;
+
+    ul {
+        margin-left: 0;
+        padding-left: 0.5em;
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+    }
+}

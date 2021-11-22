@@ -1,0 +1,18 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% if page.title == "home" %}
+            {{ site.title }} // {{ site.tagline }}
+        {% else %}
+            {{ page.title }} // {{ site.tagline }}
+        {% endif %}
+    </title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    {% if page.title != "home" %}
+    <script src="{{ '/assets/scripts/highlight.min.js' | relative_url }}"></script>
+    <script>hljs.highlightAll();</script>
+    {% endif %}
+    <script src="https://kit.fontawesome.com/357d91f838.js" crossorigin="anonymous"></script>
+</head>

@@ -1,0 +1,28 @@
+@import "_config";
+
+.list-content {
+    border-right: $border-style-content $border-thick;
+    border-color: $border-color;
+
+    margin: 0;
+    padding: 0;
+}
+
+.post-list {
+    margin-left: 0.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    padding: 0;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    a {
+        color: $link-color;
+        text-decoration: none;
+    }
+}
