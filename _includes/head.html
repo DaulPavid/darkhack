@@ -10,9 +10,23 @@
     </title>
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-    {% if page.title != "home" %}
+    {% assign page_type = page.type | split: ", " %}
+    {% if page_type contains "code" %}
     <script src="{{ '/assets/scripts/highlight.min.js' | relative_url }}"></script>
     <script>hljs.highlightAll();</script>
+    {% endif %}
+    {% if page_type contains "math" %}
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                processEscapes: true
+            }
+        };
+    </script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
     {% endif %}
     <script src="https://kit.fontawesome.com/357d91f838.js" crossorigin="anonymous"></script>
 </head>

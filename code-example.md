@@ -1,6 +1,7 @@
 ---
 title: code-example
 layout: page
+type: code, math
 ---
 
 ## Code example
