@@ -2,4 +2,8 @@
 layout: page
 ---
 
+{% assign date_format = site.darkhack.date_format | default: "%x" %}
+
+<p>$ {{ page.title }} - Updated on {{ page.date | default: site.time | date: date_format }}</p>
+
 {{ content }}
