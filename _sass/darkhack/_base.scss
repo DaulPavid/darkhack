@@ -1,9 +1,10 @@
 @import "_config";
 
 .container {
-    width: 70%;
+    max-width: 50rem;
     margin-right: auto;
     margin-left: auto;    
+    overflow: auto;
 }
 
 .content {
