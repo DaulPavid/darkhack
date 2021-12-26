@@ -26,3 +26,24 @@
         text-decoration: none;
     }
 }
+
+.disclosure {
+    margin-left: 1.0em;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+
+    padding: 0;
+
+    ul {
+        margin-top: 0.2em;
+        margin-bottom: 0.2em;
+
+        padding: 0.2em;
+
+        list-style: symbols(cyclic "-");
+
+        li {
+            padding: 0.1em;
+        }
+    }
+}

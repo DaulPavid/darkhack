@@ -20,6 +20,12 @@
     overflow-wrap: break-word;
 }
 
+.ruler {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 body {
     background-color: $background-color;
     color: $text-color;
@@ -39,5 +45,9 @@ body {
     h3 {
         font-size: $h2-size;
         font-weight: bold;
+    }
+
+    a {
+        color: $link-color;
     }
 }

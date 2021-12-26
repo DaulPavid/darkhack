@@ -10,3 +10,5 @@ This is some test content derp herp derp.
 ## Sub-titles yo!
 
 More content and shit.
+
+[Google link](https://google.com)

@@ -15,3 +15,7 @@ darkhack:
     "%x"
 
 theme: darkhack
+
+collections:
+  disclosures:
+    output: true
