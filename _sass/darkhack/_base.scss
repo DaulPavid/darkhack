@@ -50,4 +50,9 @@ body {
     a {
         color: $link-color;
     }
+
+    img {
+        max-width: 95%;
+        overflow: hidden;
+    }
 }
