@@ -15,10 +15,12 @@
             <p>$ ls --pages</p>
             <ul>
             {% for p in site.pages %}
-            {% if p.title != nil and p.title != "home" and p.layout == "page" %}
+            {% if p.title != nil and p.title != "home" and p.title != "404" %}
+            {% if p.layout == "page" %}
                 <li><a href="{{ p.url | relative_url }}">
                     -- {{ p.title }}
                 </a></li>
+            {% endif %}
             {% endif %}
             {% endfor %}
             </ul>
@@ -27,10 +29,12 @@
             <p>$ ls --posts</p>
             <ul>
             {% for p in site.posts %}
-            {% if p.title != nil and p.title != "home" and p.layout == "post" %}
+            {% if p.title != nil and p.title != "home" %}
+            {% if p.layout == "post" %}
                 <li><a href="{{ p.url | relative_url }}">
                     ./ [{{ p.date | default: site.time | date: date_format }}] - {{ p.title }}
                 </a></li>
+            {% endif %}
             {% endif %}
             {% endfor %}
             </ul>
@@ -39,10 +43,12 @@
             <p>$ ls --disclosures</p>
             <ul>
             {% for p in site.disclosures %}
-            {% if p.title != nil and p.title != "home" and p.layout == "disclosure" %}
+            {% if p.title != nil and p.title != "home" %}
+            {% if p.layout == "disclosure" %}
                 <li><a href="{{ p.url | relative_url }}">
                     ./ [{{ p.date | default: site.time | date: date_format }}] - {{ p.title }}
                 </a></li>
+            {% endif %}
             {% endif %}
             {% endfor %}
             </ul>
