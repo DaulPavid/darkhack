@@ -17,6 +17,7 @@
 
     padding-right: 1em;
 
+    overflow-x: hidden;
     overflow-wrap: break-word;
 }
 
@@ -56,3 +57,10 @@ body {
         overflow: hidden;
     }
 }
+
+mjx-container {
+    display: inline-grid;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+  }
