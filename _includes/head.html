@@ -29,7 +29,7 @@
     </script>
     {% endif %}
     {% if page_type contains "mermaid" %}
-    <script type="text/javascript" 
+    <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js">
     </script>
     <script>
@@ -39,5 +39,8 @@
         });
     </script>
     {% endif %}
-    <script src="https://kit.fontawesome.com/357d91f838.js" crossorigin="anonymous"></script>
+    {% assign font_awesome = site.darkhack.font_awesome %}
+    {% if font_awesome != nil %}
+    <script src="https://kit.fontawesome.com/{{ font_awesome }}.js" crossorigin="anonymous"></script>
+    {% endif %}
 </head>

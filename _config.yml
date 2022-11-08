@@ -1,8 +1,10 @@
-title: Dark Hacking Site 
+title: Dark Hacking Site
 author:
   name: root
   email: root@sudo.net
   twitter: daulpavid
+  mastodon_instance: infosec.exchange
+  mastodon_handle: daulpavid
   github: daulpavid
   linkedin: daulpavid
 description:
@@ -11,8 +13,8 @@ tagline:
   Hack the planet!
 
 darkhack:
-  date_format:
-    "%x"
+  date_format: "%x"
+  font_awesome: "357d91f838"
 
 theme: darkhack
 
