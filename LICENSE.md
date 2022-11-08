@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Copyright (c) 2021 Paul David
+Copyright (c) 2022 Paul David
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
