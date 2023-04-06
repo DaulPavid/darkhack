@@ -3,7 +3,7 @@
 .container {
     max-width: 50rem;
     margin-right: auto;
-    margin-left: auto;    
+    margin-left: auto;
     overflow: auto;
 }
 
@@ -11,9 +11,7 @@
     border-right: $border-style-content $border-thick;
     border-color: $border-color;
 
-    margin-left: 0.5em;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin: 0;
 
     padding-right: 1em;
 
